@@ -74,7 +74,7 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 end)
 
 -- Register chat command to open the terminal
-minetest.register_chatcommand("terminal", {
+minetest.register_chatcommand("luaterminal", {
     description = "Open the terminal interface for real-time Lua execution (requires luaterminaladmin priv)",
     func = function(name)
         open_terminal(name)
